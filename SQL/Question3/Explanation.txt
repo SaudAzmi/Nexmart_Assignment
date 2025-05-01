@@ -12,16 +12,10 @@
 # 3-2 Language-Based Data Quality Insights 
 (By identifying which lnaguages has higher bad quality you can understand the product with certain language catalog tends to have more issue.)
 
-## 1. Relative vs. Absolute Data Quality Issues by Language
-
-- English (`en`):
-  - Total Records: 27
-  - Total Bad Fields: 32
+## 1. English (`en`):
   - Relative Bad Quality: 30%
   - → Highest relative data quality issue per record.
 
 - German (`de`):
-  - Total Records: 281
-  - Total Bad Fields: 175
   - Relative Bad Quality: 16%
   - → Highest absolute number of missing fields.
