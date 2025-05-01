@@ -1,3 +1,5 @@
+-- Which language has the biggest improvement potential in their data quality in absolute and relative numbers?
+
 SELECT 
     language,
     COUNT(*) AS total_records,
