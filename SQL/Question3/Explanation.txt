@@ -1,4 +1,4 @@
-# Columns with the Most Missing Values per Manufacturer
+ # 3-1Columns with the Most Missing Values per Manufacturer
 
 
 1. Overall Data Quality by Manufacturer:
@@ -7,3 +7,21 @@
    - BOSCH has the most balanced data but still shows:
      • 20% missing in `long_description`
      • 5.71% missing in `short_description_2`
+
+
+# 3-2 Language-Based Data Quality Insights 
+(By identifying which lnaguages has higher bad quality you can understand the product with certain language catalog tends to have more issue.)
+
+## 1. Relative vs. Absolute Data Quality Issues by Language
+
+- English (`en`):
+  - Total Records: 27
+  - Total Bad Fields: 32
+  - Relative Bad Quality: 30%
+  - → Highest relative data quality issue per record.
+
+- German (`de`):
+  - Total Records: 281
+  - Total Bad Fields: 175
+  - Relative Bad Quality: 16%
+  - → Highest absolute number of missing fields.
