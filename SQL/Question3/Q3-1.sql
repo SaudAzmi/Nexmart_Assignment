@@ -3,7 +3,7 @@
 -- Columns with the Most Missing Values per Manufacturer
 SELECT
      manufacturername,
-    'short_description' ,
+    'short_description' AS variable,
     ROUND(SUM(CASE WHEN `Short description` IS Null THEN 1 ELSE 0 END) / COUNT(*) * 100, 2) AS missing_percentage
 FROM clean_catalog
 GROUP BY  manufacturername
