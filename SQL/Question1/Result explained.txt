@@ -1,1 +1,5 @@
+FEIN is the top candidate in absolute terms to benefit from data quality improvements.
 
+ROTHENBERGER, though smaller in total records,but has as high relative bad quality as FEIN → they may benefit even more from a cleanup 
+FEIN has the biggest absolute improvement potential with 100 bad fields. ROTHENBERGER and GUSTAV KLAUKE GMBH have the biggest relative improvement potential with 25% of their fields being low quality.
+FISCHER shows excellent data quality with 0% bad fields, so no improvement needed there.
