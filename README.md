@@ -2,7 +2,7 @@
 
 ## 🚀 Objective
 
-The objective of this solution is to prove to our internal business stakeholders that our customers (manufacturers/retailers) would benefit from an improvement in their data quality, using the provided catalog data
+The objective of this solution is to prove to  internal business stakeholders that  customers (manufacturers/retailers) would benefit from an improvement in their data quality, using the provided catalog data
 
 ## 📁 Project Structure
 
