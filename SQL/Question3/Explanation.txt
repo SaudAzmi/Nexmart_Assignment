@@ -1,1 +1,9 @@
+# Columns with the Most Missing Values per Manufacturer
 
+
+1. Overall Data Quality by Manufacturer:
+   - FISCHER has perfect data completeness (0% missing) across all description fields.
+   - FEIN, ROTHENBERGER, and GUSTAV KLAUKE GMBH show excellent quality in most fields but have 100% missing data in `short_description_2`.
+   - BOSCH has the most balanced data but still shows:
+     • 20% missing in `long_description`
+     • 5.71% missing in `short_description_2`
