@@ -19,3 +19,12 @@
 - German (`de`):
   - Relative Bad Quality: 16%
   - → Highest absolute number of missing fields.
+
+
+# 3-3 # Product Weight Insights (Average)
+(Helps in ideniotfy the product weight range and  idenity Inconsistent data and outliers) 
+
+- ROTHENBERGER has the heaviest products (10.29 kg on average).
+- BOSCH offers the lightest products (3.48 kg on average).
+- FEIN and GUSTAV KLAUKE GMBH fall in between, with average weights of 7.40 kg and 8.98 kg, respectively.
+- FISCHER has a moderate average weight of 5.23 kg.
