@@ -17,7 +17,7 @@ The objective of this solution is to prove to  internal business stakeholders th
 ### Steps:
 1. **Data Loading**: Loaded the raw CSV files (`product_descriptions.csv`, `product_properties.csv`, `manufacturers.csv`) into Pandas DataFrames.
 2. **Data Cleaning**:
-   - Normalized bad quality data (e.g., 'N/A', empty strings) to `NaN`.
+   - Normalized bad quality data (e.g., 'N/A', empty strings).
    - Dropped rows with missing values in key columns (`Articlenumber`, `Manufacturernumber`).
 3. **Merging Data**: Merged the `product_descriptions`, `product_properties`, and `manufacturers` DataFrames on common columns.
 4. **Output**: Saved the cleaned data to `output/cleaned_product_data.csv` 
