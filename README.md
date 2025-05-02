@@ -1,4 +1,4 @@
-# 📦 Product Catalog Analysis
+#  Product Catalog Analysis
 
 ## 🚀 Objective
 
