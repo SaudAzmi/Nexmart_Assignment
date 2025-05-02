@@ -1,0 +1,11 @@
+✅ Testing : Writing unit test cases to make sure things work as expected.
+
+🔄 Scheduled Updates : Automate the data to update daily or weekly using ajob scheduler.
+
+⚙️ Automated Data Pipelines : Implement automatic data cleaning and transformation 
+
+📝 Data Documentation : Provide explanations of each table and column — including purpose, definitions, and data types.
+
+🧱 Table Structure : Maintain documentation of table structures, ensuring alignment with Dev and QA environments.
+
+🔐 Row-Level Security: Implement row-level access  based on user roles or permissions.
