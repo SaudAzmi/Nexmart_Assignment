@@ -12,3 +12,57 @@ The objective of this solution is to prove to  internal business stakeholders th
 - `dashboard/` — Contains the Power BI one-page dashboard
 - `Bonus Question.txt` — Bonus Question
 - `requirements.txt` — Python dependency file
+
+##Data Pipeline (Pandas)
+### Steps:
+1. **Data Loading**: Loaded the raw CSV files (`product_descriptions.csv`, `product_properties.csv`, `manufacturers.csv`) into Pandas DataFrames.
+2. **Data Cleaning**:
+   - Normalized bad quality data (e.g., 'N/A', empty strings) to `NaN`.
+   - Dropped rows with missing values in key columns (`Articlenumber`, `Manufacturernumber`).
+3. **Merging Data**: Merged the `product_descriptions`, `product_properties`, and `manufacturers` DataFrames on common columns.
+4. **Output**: Saved the cleaned data to `output/cleaned_product_data.csv` 
+
+## SQL section.
+Steps to Run SQL Queries
+Set Up Database Connection:
+
+Make sure your MySQL database is running and accessible.
+
+If you're using Python, ensure you have SQLAlchemy and Pandas installed:
+
+bash
+Copy
+Edit
+pip install sqlalchemy pymysql pandas
+Configure Database Credentials:
+
+Replace the placeholder credentials (DB_USERNAME, DB_PASSWORD, etc.) in your connection script with your actual MySQL database credentials.
+
+Run the SQL Queries:
+
+The SQL queries to answer the key business questions are available in the sql/queries.sql file.
+
+You can run the queries directly on your MySQL database using a MySQL client (e.g., MySQL Workbench, phpMyAdmin) or use Python with SQLAlchemy:
+
+
+from sqlalchemy import create_engine #Connecting to SQL Database using SQLAlchemy 
+
+
+# MySQL Connection Parameters
+username = "DB_USERNAME"               
+password = "DB_PASSWORD"     
+host = "DB_HOST"             
+port = "DB_PORT"                  
+database = "DB_NAME"           
+
+# Creating SQLAlchemy connection string
+connection_string = f"mysql+pymysql://{username}:{password}@{host}:{port}/{database}"
+
+# Creating SQLAlchemy Engine
+engine = create_engine(connection_string)
+
+# Loading DataFrame into MySQL
+merged.to_sql(name="clean_catalog", con=engine, if_exists="fail", index=False)
+
+print("Table created and data loaded into MySQL.")
+
