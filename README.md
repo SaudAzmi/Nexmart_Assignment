@@ -8,7 +8,7 @@ The objective of this solution is to prove to  internal business stakeholders th
 
 - `data/` — Contains raw data files (`product_descriptions`, `product_properties`, `manufacturers`)
 - `scripts/` — Contains the functional Python notebook script for data pipeline using Pandas
-- `sql/` — Contains SQL scripts to answer key business questions
+- `sql/` — Contains SQL scripts to answer key  questions
 - `dashboard/` — Contains the Power BI one-page dashboard
 - `Bonus Question.txt` — Bonus Question
 - `requirements.txt` — Python dependency file
@@ -22,23 +22,21 @@ The objective of this solution is to prove to  internal business stakeholders th
 3. **Merging Data**: Merged the `product_descriptions`, `product_properties`, and `manufacturers` DataFrames on common columns.
 4. **Output**: Saved the cleaned data to `output/cleaned_product_data.csv` 
 
-## SQL section.
-Steps to Run SQL Queries
-Set Up Database Connection:
+## SQL section: Steps to Run SQL Queries
+**Set Up Database Connection**:
  Make sure your MySQL database is running and accessible.
    
-   Ensure you have SQLAlchemy and Pandas installed:   
-   pip install sqlalchemy pymysql pandas
+   Ensure you have SQLAlchemy and Pandas installed:  pip install sqlalchemy pymysql pandas
 
-Configure Database Credentials:
+**Configure Database Credentials** :
 
-Replace the placeholder credentials (DB_USERNAME, DB_PASSWORD, etc.) in your connection script with your actual MySQL database credentials.
+Replace the placeholder credentials (DB_USERNAME, DB_PASSWORD, etc.) in the connection script with your MySQL database credentials.
 
-Run the SQL Queries:
+**Run the SQL Queries**:
 
-The SQL queries to answer the key business questions are available in the sql/queries.sql file.
+The SQL queries to answer the key business questions are available in the SQL folders.
 
-You can run the queries directly on your MySQL database using a MySQL client (e.g., MySQL Workbench, phpMyAdmin) or use Python with SQLAlchemy:
+You can run the queries directly on your MySQL database 
 
 
 from sqlalchemy import create_engine #Connecting to SQL Database using SQLAlchemy 
