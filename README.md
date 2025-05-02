@@ -20,7 +20,7 @@ The objective of this solution is to prove to  internal business stakeholders th
    - Normalized bad quality data (e.g., 'N/A', empty strings).
    - Dropped rows with missing values in key columns (`Articlenumber`, `Manufacturernumber`).
 3. **Merging Data**: Merged the `product_descriptions`, `product_properties`, and `manufacturers` DataFrames on common columns.
-4. **Output**: Saved the cleaned data to `output/cleaned_product_data.csv` 
+4. **Output**: Save the cleaned data ` cleaned_product_data.csv` 
 
 ## SQL section: 
 ### Steps to Run SQL Queries
