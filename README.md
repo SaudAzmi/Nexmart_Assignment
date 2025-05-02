@@ -56,5 +56,21 @@ from sqlalchemy import create_engine
 3. **Run the SQL Queries**:
 
    - The SQL queries to answer the key business questions are available in the SQL folders.
+  
+## 📊 Power BI Dashboard
+
+### Steps to Use the Power BI Dashboard
+
+1. **Connect to MySQL Database**:
+   - Open **Power BI Desktop**.
+   - Click on **Get Data** > **MySQL Database**.
+   - In the **Server** field, enter your MySQL server name and database name.
+   - Click **Connect** and input your database credentials (username and password).
+
+2. **Import Data**:
+   - After successfully connecting to the database, select the clean_catalog table.
+   - Load the data into Power BI.
+
+3. **Build Visualizations**
 
 
