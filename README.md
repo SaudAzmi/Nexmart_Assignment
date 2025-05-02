@@ -25,36 +25,36 @@ The objective of this solution is to prove to  internal business stakeholders th
 ## SQL section: 
 ### Steps to Run SQL Queries
 1. **Set Up Database Connection**:
- Make sure your MySQL database is running and accessible.
+   -  Make sure your MySQL database is running and accessible.
    
-   Ensure you have SQLAlchemy and Pandas installed:  pip install sqlalchemy pymysql pandas
+   - Ensure you have SQLAlchemy and Pandas installed:  pip install sqlalchemy pymysql pandas
 
 2. **Configure Database Credentials** :
 
-Replace the placeholder credentials (DB_USERNAME, DB_PASSWORD, etc.) in the connection script with your MySQL database credentials.
+   - Replace the placeholder credentials (DB_USERNAME, DB_PASSWORD, etc.) in the connection script with your MySQL database credentials.
 
 
-from sqlalchemy import create_engine #Connecting to SQL Database using SQLAlchemy 
+from sqlalchemy import create_engine 
+#Connecting to SQL Database using SQLAlchemy 
 
-
- MySQL Connection Parameters
-username = "DB_USERNAME"               
-password = "DB_PASSWORD"     
-host = "DB_HOST"             
-port = "DB_PORT"                  
-database = "DB_NAME"           
+   - MySQL Connection Parameters
+   - username = "DB_USERNAME"               
+   - password = "DB_PASSWORD"     
+   - host = "DB_HOST"             
+   - port = "DB_PORT"                  
+   - database = "DB_NAME"           
 
  Creating SQLAlchemy connection string
-connection_string = f"mysql+pymysql://{username}:{password}@{host}:{port}/{database}"
+   - connection_string = f"mysql+pymysql://{username}:{password}@{host}:{port}/{database}"
 
 Creating SQLAlchemy Engine
-engine = create_engine(connection_string)
+   - engine = create_engine(connection_string)
 
 Loading DataFrame into MySQL
-merged.to_sql(name="clean_catalog", con=engine, if_exists="fail", index=False)
+   - merged.to_sql(name="clean_catalog", con=engine, if_exists="fail", index=False)
 
 3. **Run the SQL Queries**:
 
-The SQL queries to answer the key business questions are available in the SQL folders.
+   - The SQL queries to answer the key business questions are available in the SQL folders.
 
 
