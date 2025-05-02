@@ -10,4 +10,5 @@ The objective of this solution is to prove to  internal business stakeholders th
 - `scripts/` — Contains the functional Python notebook script for data pipeline using Pandas
 - `sql/` — Contains SQL scripts to answer key business questions
 - `dashboard/` — Contains the Power BI one-page dashboard
+- `Bonus Question.txt` — Bonus Question
 - `requirements.txt` — Python dependency file
