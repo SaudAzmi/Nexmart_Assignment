@@ -22,21 +22,16 @@ The objective of this solution is to prove to  internal business stakeholders th
 3. **Merging Data**: Merged the `product_descriptions`, `product_properties`, and `manufacturers` DataFrames on common columns.
 4. **Output**: Saved the cleaned data to `output/cleaned_product_data.csv` 
 
-## SQL section: Steps to Run SQL Queries
-**Set Up Database Connection**:
+## SQL section: 
+###Steps to Run SQL Queries
+1. **Set Up Database Connection**:
  Make sure your MySQL database is running and accessible.
    
    Ensure you have SQLAlchemy and Pandas installed:  pip install sqlalchemy pymysql pandas
 
-**Configure Database Credentials** :
+2. **Configure Database Credentials** :
 
 Replace the placeholder credentials (DB_USERNAME, DB_PASSWORD, etc.) in the connection script with your MySQL database credentials.
-
-**Run the SQL Queries**:
-
-The SQL queries to answer the key business questions are available in the SQL folders.
-
-You can run the queries directly on your MySQL database 
 
 
 from sqlalchemy import create_engine #Connecting to SQL Database using SQLAlchemy 
@@ -57,5 +52,9 @@ engine = create_engine(connection_string)
 
 ## Loading DataFrame into MySQL
 merged.to_sql(name="clean_catalog", con=engine, if_exists="fail", index=False)
+
+3. **Run the SQL Queries**:
+
+The SQL queries to answer the key business questions are available in the SQL folders.
 
 
