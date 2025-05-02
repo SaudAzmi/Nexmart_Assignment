@@ -35,7 +35,7 @@ The objective of this solution is to prove to  internal business stakeholders th
 
 
 from sqlalchemy import create_engine 
-#Connecting to SQL Database using SQLAlchemy 
+**Connecting to SQL Database using SQLAlchemy** 
 
    - MySQL Connection Parameters
    - username = "DB_USERNAME"               
@@ -44,13 +44,13 @@ from sqlalchemy import create_engine
    - port = "DB_PORT"                  
    - database = "DB_NAME"           
 
- Creating SQLAlchemy connection string
+ **Creating SQLAlchemy connection string**
    - connection_string = f"mysql+pymysql://{username}:{password}@{host}:{port}/{database}"
 
-Creating SQLAlchemy Engine
+**Creating SQLAlchemy Engine**
    - engine = create_engine(connection_string)
 
-Loading DataFrame into MySQL
+**Loading DataFrame into MySQL**
    - merged.to_sql(name="clean_catalog", con=engine, if_exists="fail", index=False)
 
 3. **Run the SQL Queries**:
