@@ -25,15 +25,11 @@ The objective of this solution is to prove to  internal business stakeholders th
 ## SQL section.
 Steps to Run SQL Queries
 Set Up Database Connection:
+ Make sure your MySQL database is running and accessible.
+   
+   Ensure you have SQLAlchemy and Pandas installed:   
+   pip install sqlalchemy pymysql pandas
 
-Make sure your MySQL database is running and accessible.
-
-If you're using Python, ensure you have SQLAlchemy and Pandas installed:
-
-bash
-Copy
-Edit
-pip install sqlalchemy pymysql pandas
 Configure Database Credentials:
 
 Replace the placeholder credentials (DB_USERNAME, DB_PASSWORD, etc.) in your connection script with your actual MySQL database credentials.
