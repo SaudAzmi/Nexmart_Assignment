@@ -13,7 +13,7 @@ The objective of this solution is to prove to  internal business stakeholders th
 - `Bonus Question.txt` — Bonus Question
 - `requirements.txt` — Python dependency file
 
-##Data Pipeline (Pandas)
+## Data Pipeline (Pandas)
 ### Steps:
 1. **Data Loading**: Loaded the raw CSV files (`product_descriptions.csv`, `product_properties.csv`, `manufacturers.csv`) into Pandas DataFrames.
 2. **Data Cleaning**:
@@ -48,21 +48,20 @@ You can run the queries directly on your MySQL database using a MySQL client (e.
 from sqlalchemy import create_engine #Connecting to SQL Database using SQLAlchemy 
 
 
-# MySQL Connection Parameters
+## MySQL Connection Parameters
 username = "DB_USERNAME"               
 password = "DB_PASSWORD"     
 host = "DB_HOST"             
 port = "DB_PORT"                  
 database = "DB_NAME"           
 
-# Creating SQLAlchemy connection string
+## Creating SQLAlchemy connection string
 connection_string = f"mysql+pymysql://{username}:{password}@{host}:{port}/{database}"
 
-# Creating SQLAlchemy Engine
+## Creating SQLAlchemy Engine
 engine = create_engine(connection_string)
 
-# Loading DataFrame into MySQL
+## Loading DataFrame into MySQL
 merged.to_sql(name="clean_catalog", con=engine, if_exists="fail", index=False)
 
-print("Table created and data loaded into MySQL.")
 
